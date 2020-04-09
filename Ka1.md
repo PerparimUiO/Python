@@ -3,11 +3,38 @@ Emri i skedarit: `programi_im.py`
 
 Shkruani një program që shfaq në ekran "Ky është programi im".
 
-<details><summary>💾 Løsningsforslag </summary>
+<details><summary>💾 Zgjidhje alternative </summary>
 <p>
 
 ``` python
 print("Ky është programi im")
+```
+
+</p>
+</details>
+
+
+***
+
+## Informacione personale 
+Emri i skedarit: `person.py`
+1.Shkruani emrin, telefonin dhe adresën tuaj në ekran në të njëjtën linjë.
+2.Shkruajeni emrin, telefonin dhe adresën tuaj në ekran në secilin rresht.
+
+
+<details><summary>💾 Zgjidhje alternative </summary>
+<p>
+
+``` python
+# 1
+print("Perparim Shala 049000111 Rr.Ilaz Kodra, Drenas")
+
+# 2
+print("Perparim Shala\n 049000111\n Rr.Ilaz Kodra, Drenas")
+# apo
+print("Perparim Shala")
+print("049000111")
+print("Rr.Ilaz Kodra, Drenas")
 ```
 
 </p>
