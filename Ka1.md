@@ -48,10 +48,15 @@ print("Rr.Ilaz Kodra, Drenas")
 Emri i skedarit: `pershendetje_bote.py`
 
 a) Shkruani një program që shfaq në ekran "Përshëndetje Botë!".
+
 b) Zgjeroni programin me një variabel `mosha` që ka vlerën 4.
+
 c) Shfaqeni "Mosha:" dhe vlerën e moshës në ekran.
+
 d) Shkruani komentin e mëposhtëm në program: "Tani ndryshojmë vlerën e moshës së ndryshueshme:".
+
 e) Ndryshoni vlerën në ndryshoren e moshës më moshën tuaj. Shfaqeni një rresht të ri në ekran me një tekst të përshtatshëm dhe vlerën e re për moshën.
+
 f) Ekzekuto programin tuaj.
 
 
@@ -71,9 +76,8 @@ print("Mosha: ", mosha)
 # d)
 # Tani ndryshojmë vlerën e variables moshë:
 
-# e)
-alder = 400
-print("Min alder er:", alder)
+alder = 33  # e)
+print("Mosha ime: ", alder)
 
 # f)
 python3 pershendetje_bote.py
