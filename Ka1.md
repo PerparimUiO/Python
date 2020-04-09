@@ -18,6 +18,7 @@ print("Ky është programi im")
 
 ## Informacione personale 
 Emri i skedarit: `person.py`
+
 1.Shkruani emrin, telefonin dhe adresën tuaj në ekran në të njëjtën linjë.
 2.Shkruajeni emrin, telefonin dhe adresën tuaj në ekran në secilin rresht.
 
@@ -27,14 +28,55 @@ Emri i skedarit: `person.py`
 
 ``` python
 # 1
-print("Perparim Shala 049000111 Rr.Ilaz Kodra, Drenas")
+print("Perparim Shala 222000111 Rr.Ilaz Kodra, Drenas")
 
 # 2
-print("Perparim Shala\n 049000111\n Rr.Ilaz Kodra, Drenas")
+print("Perparim Shala\n 222000111\n Rr.Ilaz Kodra, Drenas")
 # apo
 print("Perparim Shala")
-print("049000111")
+print("222000111")
 print("Rr.Ilaz Kodra, Drenas")
+```
+
+</p>
+</details>
+
+
+***
+
+## Percaktime dhe shfaqje
+Emri i skedarit: `pershendetje_bote.py`
+
+a) Shkruani një program që shfaq në ekran "Përshëndetje Botë!".
+b) Zgjeroni programin me një variabel `mosha` që ka vlerën 4.
+c) Shfaqeni "Mosha:" dhe vlerën e moshës në ekran.
+d) Shkruani komentin e mëposhtëm në program: "Tani ndryshojmë vlerën e moshës së ndryshueshme:".
+e) Ndryshoni vlerën në ndryshoren e moshës më moshën tuaj. Shfaqeni një rresht të ri në ekran me një tekst të përshtatshëm dhe vlerën e re për moshën.
+f) Ekzekuto programin tuaj.
+
+
+<details><summary>💾 Zgjidhje alternative </summary>
+<p>
+
+``` python
+# a)
+print("Përshëndetje Botë!")
+
+# b)
+mosha = 4
+
+# c)
+print("Mosha: ", mosha)
+
+# d)
+# Tani ndryshojmë vlerën e variables moshë:
+
+# e)
+alder = 400
+print("Min alder er:", alder)
+
+# f)
+python3 pershendetje_bote.py
 ```
 
 </p>
