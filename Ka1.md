@@ -53,9 +53,9 @@ b) Zgjeroni programin me një variabel `mosha` që ka vlerën 4.
 
 c) Shfaqeni "Mosha:" dhe vlerën e moshës në ekran.
 
-d) Shkruani komentin e mëposhtëm në program: "Tani ndryshojmë vlerën e moshës së ndryshueshme:".
+d) Shkruani komentin e mëposhtëm në program:` "Tani ndryshojmë vlerën e variables moshë:" `.
 
-e) Ndryshoni vlerën në ndryshoren e moshës më moshën tuaj. Shfaqeni një rresht të ri në ekran me një tekst të përshtatshëm dhe vlerën e re për moshën.
+e) Ndryshoni vlerën e variabel `mosha` më moshën tuaj. Shfaqeni një rresht të ri në ekran me një tekst të përshtatshëm dhe vlerën e re për moshën.
 
 f) Ekzekuto programin tuaj.
 
@@ -75,7 +75,6 @@ print("Mosha: ", mosha)
 
 # d)
 # Tani ndryshojmë vlerën e variables moshë:
-
 alder = 33  # e)
 print("Mosha ime: ", alder)
 
