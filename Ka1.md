@@ -20,6 +20,7 @@ print("Ky është programi im")
 Emri i skedarit: `person.py`
 
 1.Shkruani emrin, telefonin dhe adresën tuaj në ekran në të njëjtën linjë.
+
 2.Shkruajeni emrin, telefonin dhe adresën tuaj në ekran në secilin rresht.
 
 
@@ -75,8 +76,8 @@ print("Mosha: ", mosha)
 
 # d)
 # Tani ndryshojmë vlerën e variables moshë:
-alder = 33  # e)
-print("Mosha ime: ", alder)
+mosha = 33  # e)
+print("Mosha ime: ", mosha)
 
 # f)
 python3 pershendetje_bote.py
