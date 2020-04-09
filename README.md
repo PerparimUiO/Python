@@ -2,8 +2,8 @@
 | Chapters | CHAPTER GOALS |
 | --- | --- |
 | Programming with numbers and strings | Variables,Arithmetic,Strings,Input and Output|
-| Decisons | The **if** Statement,Relational Operators,Multiple Alternatives,Boolean Variables and Operators,Analyzing Strings|
-| Loops | The **if** Statement |
+| Decisons | The *if* Statement,Relational Operators,Multiple Alternatives,Boolean Variables and Operators,Analyzing Strings|
+| Loops | The *while Loop*, The *for* Loop, Nested Loops|
 | Functions | The **if** Statement |
 | Lists | The **if** Statement |
 | Fils and exception | The **if** Statement |
