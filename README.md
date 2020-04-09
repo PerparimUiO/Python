@@ -1,14 +1,8 @@
 **PYTHON Programming Exercises, Practice, Solution** `(Inspired from book >>Python for Everyone<<)`
 | Chapters | CHAPTER GOALS |
 | --- | --- |
-| Programming with numbers and strings | To define and use variables and constants
-To understand the properties and limitations of integers and floating-point numbers
-To appreciate the importance of comments and good code layout
-To write arithmetic expressions and assignment statements
-To create programs that read and process inputs, and display the results
-To learn how to use Python strings
-To create simple graphics programs using basic shapes and text |
-| Decisons | The **if** Statement |
+| Programming with numbers and strings | Variables,Arithmetic,Strings,Input and Output|
+| Decisons | The **if** Statement,Relational Operators,Multiple Alternatives,Boolean Variables and Operators,Analyzing Strings|
 | Loops | The **if** Statement |
 | Functions | The **if** Statement |
 | Lists | The **if** Statement |
