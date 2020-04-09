@@ -8,6 +8,7 @@ Shkruani një program që shfaq në ekran "Ky është programi im".
 
 ``` python
 print("Ky është programi im")
+```
 
 </p>
 </details>
