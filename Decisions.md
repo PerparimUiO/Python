@@ -25,7 +25,7 @@ else:
 ***
 
 ## P3.2.py
-#  Write a program that reads a floating­point number and prints “zero” if the number is zero. Otherwise, print “positive” or “negative”. Add “small” if the absolute valueof the number is less than 1, or “large” if it exceeds 1,000,000.
+Write a program that reads a floating­point number and prints “zero” if the number is zero. Otherwise, print “positive” or “negative”. Add “small” if the absolute valueof the number is less than 1, or “large” if it exceeds 1,000,000.
 
 
 <details><summary>💾  Alternative solution </summary>
