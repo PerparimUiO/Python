@@ -418,14 +418,15 @@ else:
 ## P4.6.py
  Translate the following pseudocode for finding the minimum value from a set of
  inputs into a Python program.
- `    Set a Boolean variable "first" to true.
+ 
+     Set a Boolean variable "first" to true.
      While another value has been read successfully
          If first is true
              Set the minimum to the value.
              Set first to false.
          Else if the value is less than the minimum
              Set the minimum to the value.
-     Print the minimum. `
+     Print the minimum. 
 
 <details><summary>💾 Alternative solution </summary>
 <p>
@@ -467,80 +468,195 @@ print("Minimum value", minN)
 </details>
 
 ***
-## P4.
+## P4.7.py
+ Translate the following pseudocode for randomly permuting the characters in a
+ string into a Python program.
+ 
+      Read a word.
+      Repeat len(word) times
+          Pick a random position i in the word, but not the last position.
+          Pick a random position j > i in the word.
+          Swap the letters at positions j and i.
+      Print the word.      
+    To swap the letters, construct substrings as follows:
+    first middle last i j
+    Then replace the string with
+    first + word[j] + middle + word[i] + last
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+from random import random
 
+inputWord = str(input("Enter a word: "))
+
+first = ""
+middle = ""
+last = ""
+
+wordLen = len(inputWord)
+
+for i in range(wordLen):
+    a = int(random() % wordLen)
+    b = int((a + 1) + random() % (wordLen - (a + 1) + 1))
+
+    if a == 0:
+        first = ""
+
+    else:
+        first = inputWord[:a]
+
+    if a == b - 1:
+        middle = ""
+
+    else:
+        start = a + 1
+        end = b - start + start
+        middle = inputWord[start:end]
+
+    if b == wordLen:
+        last = ""
+
+    else:
+        start = b + 1
+        end = wordLen - b - 1 + start
+        last = inputWord[start:end]
+
+    inputWord = first +  inputWord[b:b+1] + middle + inputWord[a:a+1] + last
+
+
+print(inputWord)
 ```
 
 </p>
 </details>
 
 ***
-## P4.
-
+## P4.8.py
+ Write a program that reads a word and prints each character of the word on a sepa-
+ rate line. For example, if the user provides the input  "Harry" , the program prints
+ 
+    H
+    a
+    r
+    r
+    y
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+inputWord = str(input("Enter a word: "))
 
+for i in range(len(inputWord)):
+    print(inputWord[i])
 ```
 
 </p>
 </details>
 
 ***
-v
-## P4.
+
+## P4.9.py
+ Write a program that reads a word and prints the word in reverse. For example, if the
+ user provides the input  "Harry" , the program prints
+     yrraH
+
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+inputWord = str(input("Enter a word: "))
 
+for i in range(len(inputWord) - 1, -1, -1):
+    print(inputWord[i], end = "")
 ```
 
 </p>
 </details>
 
 ***
-v
-## P4.
+
+## P4.10.py
+ Write a program that reads a word and prints the number of vowels in the word. For
+ this exercise, assume that  a e i o u y are vowels. For example, if the user pro vides the
+ input  "Harry" , the program prints  2 vowels .
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+inputWord = str(input("Enter a word: "))
+vowels = ('a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y')
 
+numVowels = 0
+
+for i in range(len(inputWord)):
+    if inputWord[i] in vowels:
+        numVowels += 1
+
+print("%d vowels" % numVowels)
 ```
 
 </p>
 </details>
 
 ***
-## P4.
+## P4.12.py
+
+ Write a program that reads a word and prints all substrings, sorted by length. For
+ example, if the user provides the input  "rum" , the program prints
+ 
+     r
+     u
+     m
+     ru
+     um
+     rum
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+word = str(input("Enter a word: "))
 
+wordLen = len(word)
+subLen = 1
+start = 0
+
+for i in range(wordLen):
+    start = 0
+    while start + subLen <= wordLen:
+        print(word[start:start+subLen])
+        start += 1
+    subLen += 1
 ```
 
 </p>
 </details>
 
 ***
-## P4.
 
+## P4.13.py
+ Write a program that reads an integer value and prints all of its binary digits in
+ reverse order: Print the remainder  number % 2 , then replace the number with  number //
+ 2 . Keep going until the number is 0. For example, if the user provides the input 13,
+ the output should be
+ 
+     1
+     0
+     1
+     1
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+inputN = int(input("Enter a number: "))
 
+while inputN > 0:
+    print(inputN % 2)
+    inputN = inputN // 2
 ```
 
 </p>
