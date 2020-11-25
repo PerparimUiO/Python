@@ -532,78 +532,206 @@ main()
 </details>
 
 ***
-## P5.
+## P5.15
+ Write a recursive function
+     def reverse(string)
+ that computes the reverse of a string. For example,  reverse("flow") should return
+ "wolf" . Hint: Reverse the substring starting at the second character, then add the first
+ character at the end. For example, to reverse  "flow" , first reverse  "low" to  "wol" , then
+ add the  "f" at the end.
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+# FUNCTIONS
+def reverse(string):
+    result = ""
+    for i in range(len(string) - 1, 0, -1):
+        result += string[i]
+    result += string[0]
+    return result
 
+def main():
+    string = str(input("Enter a string: "))
+    print("Reversed:", reverse(string))
+
+# PROGRAM RUN
+main()
 ```
 
 </p>
 </details>
 
 ***
-## P5.
+## P5.16
+ Write a recursive function
+     def isPalindrome(string)
+ that returns  True if  string is a palindrome, that is, a word that is the same when
+ reversed. Examples of palin dromes are “deed”, “rotor”, or “aibohphobia”. Hint: A
+ word is a palindrome if the first and last letters match and the remainder is also a
+ palindrome.
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+# FUNCTIONS
+def isPalindrome(string):
+    if len(string) <= 1:
+        return
 
+    firstLetter = string[0]
+    lastLetter = string[-1]
+
+    if firstLetter == lastLetter:
+        end = len(string) - 2 + 1
+        return isPalindrome(string[1:end])
+
+    else:
+        return False
+
+def main():
+    string = str(input("Enter a string: "))
+    print(string, "is", end = " ")
+
+    if isPalindrome(string) == False:
+        print("not", end = " ")
+
+    print("a palindrome")
+
+# PROGRAM RUN
+main()
 ```
 
 </p>
 </details>
 
 ***
-## P5.
+## P5.17
+ Use recursion to implement a function  find(string, match) that tests whether  match is
+ contained in  string :
+     b = find("Mississippi", "sip") #  Sets  b to  true
+ Hint: If  string starts with  match , you are done. If not, consider the string that you
+ obtain by removing the first character.
 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+# FUNCTIONS
+def find(string, match):
+    if len(string) < len(match):
+        return False
 
+    if string[:len(string)] == match:
+        return True
+
+    end = int(1 + len(string) - 1)
+
+    return find(string[1:end], match)
+
+def main():
+    inputString = str(input("Enter the string: "))
+    inputMatch = str(input("Enter the string to find: "))
+
+    print("Found?", find(inputString, inputMatch))
+
+# PROGRAM RUN
+main()
 ```
 
 </p>
 </details>
 
 ***
-## P5.
-
+## P5.18
+ Use recursion to determine the number of digits in an integer  n . Hint: If  n is < 10, it
+ has one digit. Otherwise, it has one more digit than  n // 10
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+# FUNCTIONS
+def numDigits(number):
+    if number < 10:
+        return 1
 
+    else:
+        return 1 + numDigits(number // 10)
+
+# main
+def main():
+    inputNumber = int(input("Enter a number: "))
+    print("Digits:", numDigits(52))
+
+# PROGRAM RUN
+main()
 ```
 
 </p>
 </details>
 
 ***
-## P5.
-
+## P5.19
+ Use recursion to compute a n , where n is a positive integer. Hint: If n is 1, then
+ a n = a. If n is even, then a n = (a n/2 ) 2 . Otherwise, a n = a × a n–1 .
+ 
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+# FUNCTIONS
+def exponent(number, exp):
+    if number <= 1:
+        return number
 
+    elif number % 2 == 0:
+        return exponent(number, exp // 2) ** 2
+
+    else:
+        return number * exponent(number, exp - 1)
+
+# main
+def main():
+    inputN = int(input("Enter a number: "))
+    inputE = int(input("Enter exponent: "))
+
+    print("Result:", print(exponent(inputN, inputE)))
+
+# PROGRAM RUN
+main()
 ```
 
 </p>
 </details>
 
 ***
-## P5.
-
+## P5.20
+ Leap years. Write a function
+     def isLeapYear(year)
+ that tests whether a year is a leap year: that is, a year with 366 days. Exercise P3.27
+ describes how to test whether a year is a leap year. In this exercise, use multiple  if
+ statements and  return statements to return the result as soon as you know it.
 <details><summary>💾 Alternative solution </summary>
 <p>
 
 ``` python
+# FUNCTIONS
+def isLeapYear(year):
+    if (year % 100 != 0 and year % 4 == 0) or year % 400 == 0:
+        return True
 
+    else:
+        return False
+
+# main
+def main():
+    inputYear = int(input("Enter a year: "))
+    print("Is it a leap year:", isLeapYear(inputYear))
+
+# PROGRAM RUN
+main()
 ```
 
 </p>
